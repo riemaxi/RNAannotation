@@ -1,0 +1,26 @@
+
+flatten.minsize : 0
+flatten.maxsize : 1000
+
+flatten.reads.threshold : 38
+flatten.reads.shift : 64
+
+encode.one : CG
+encode.dictionary : dictionary.txt
+
+encode.reads.one : CG
+
+stream.contigs.source : ../../project/human.sample123.trinity.fasta
+
+stream.reads.1 : ../../project/reads_1.fastq
+stream.reads.2 : ../../project/reads_2.fastq
+
+dsbuilder.contigs_path : data/pre_dataset.txt
+dsbuilder.min_hits_threshold : 10
+dsbuilder.max_hits_threshold : 20
+dsbuilder.sim_threshold : 0.8
+dsbuilder.k : 35
+dsbuilder.out_path : data/dataset.csv
+
+release.path : dataset_release.csv
+release.dictionary : dictionary.txt

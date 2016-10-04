@@ -1,0 +1,39 @@
+
+flatten.minsize : 0
+flatten.maxsize : 1000
+
+flatten.reads.threshold : 38
+flatten.reads.shift : 64
+
+encode.one : CG
+encode.dictionary : /home/riemaxi/rna/release/dictionary.txt
+
+encode.reads.one : CG
+
+stream.contigs.source : /home/riemaxi/project/human.sample123.trinity.fasta
+
+stream.reads.1 : /home/riemaxi/project/reads_1.fastq
+stream.reads.2 : /home/riemaxi/project/reads_2.fastq
+
+dsbuilder.save_frequency : 20
+dsbuilder.contigs_path : /home/riemaxi/rna/release/data/pre_dataset.txt
+dsbuilder.contigs_sample_size : 800
+dsbuilder.reads_sample_size : 50000
+dsbuilder.reads_random_jump : 100
+dsbuilder.sim_threshold : 0.8
+dsbuilder.k : 35
+dsbuilder.out_path : data/extended_dataset.csv
+
+release.path : dataset_release.csv
+release.dictionary : dictionary.txt
+
+reapr.out_path : reapr_dataset.txt
+reapr.width : 100
+reapr.mdh : 1
+reapr.k : 35
+reapr.dictionary : /home/riemaxi/rna/release/dictionary.txt
+
+statistics.out_path : /home/riemaxi/rna/release/data/statistics.txt
+statistics.dictionary : /home/riemaxi/rna/release/dictionary.txt
+
+feuler.dictionary : /home/riemaxi/rna/release/dictionary.txt
